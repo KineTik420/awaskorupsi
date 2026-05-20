@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Corruption Watch Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <h1>Corruption Watch Indonesia</h1>
+            <p>Promoting Transparency &amp; Integrity</p>
+        </div>
+        <button id="loginBtn">Login</button>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+		<a href="news.html">News</a>
+        <a href="report.html">Report Case</a>
+        <a href="aware.html">Awareness</a>
+        <a href="stats.html">Statistics</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <main>
+        <h1 class="page-title">Contact Us</h1>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2>Email</h2>
+                <div class="contact-item">
+                    <span class="contact-icon">✉</span>
+                    <p><a href="mailto:support@corruptionwatchid.com">support@corruptionwatchid</a></p>
+                </div>
+                <p style="margin-top:10px; font-size:0.88rem; color:#888;">We aim to respond within 2 business days.</p>
+            </div>
+
+            <div class="card">
+                <h2>Hotline</h2>
+                <div class="contact-item">
+                    <span class="contact-icon">☎</span>
+                    <p><a href="tel:+62123420">+62 123 420</a></p>
+                </div>
+                <p style="margin-top:10px; font-size:0.88rem; color:#888;">Available Monday – Friday, 09:00 – 17:00 WIB.</p>
+            </div>
+
+            <div class="card">
+                <h2>Office Address</h2>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <p>Jakarta, Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Corruption Watch Indonesia. All rights reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button class="btn" style="width:100%">Login</button>
+            <p class="modal-footer">Don't have an account? <a href="#">Register</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

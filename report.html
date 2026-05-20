@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Case – Corruption Watch Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <h1>Corruption Watch Indonesia</h1>
+            <p>Promoting Transparency &amp; Integrity</p>
+        </div>
+        <button id="loginBtn">Login</button>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+		<a href="news.html">News</a>
+        <a href="report.html" class="active">Report Case</a>
+        <a href="aware.html">Awareness</a>
+        <a href="stats.html">Statistics</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <h1 class="page-title">Submit a Corruption Report</h1>
+
+        <div class="report-form">
+            <div class="form-group">
+                <label for="title">Report Title</label>
+                <input type="text" id="title" placeholder="Brief title of the incident">
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="">Select a category</option>
+                    <option value="bribery">Bribery</option>
+                    <option value="fraud">Fraud</option>
+                    <option value="abuse">Abuse of Power</option>
+                    <option value="laundering">Money Laundering</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="incident">Incident Description</label>
+                <textarea id="incident" placeholder="Describe the incident in detail..." oninput="countWords()"></textarea>
+                <p class="word-count">Word count: <span id="wordCount">0</span></p>
+            </div>
+
+            <button class="btn" onclick="submitReport()">Submit Report Anonymously</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Corruption Watch Indonesia. All rights reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button class="btn" style="width:100%">Login</button>
+            <p class="modal-footer">Don't have an account? <a href="#">Register</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

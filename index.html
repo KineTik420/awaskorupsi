@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corruption Watch Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <h1>Corruption Watch Indonesia</h1>
+            <p>Promoting Transparency &amp; Integrity</p>
+        </div>
+        <button id="loginBtn">Login</button>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+		<a href="news.html">News</a>
+        <a href="report.html">Report Case</a>
+        <a href="aware.html">Awareness</a>
+        <a href="stats.html">Statistics</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2>Report Corruption Safely</h2>
+			<img src="images/wokd.jpg"alt= Our platform allows citizens to report corruption anonymously
+                while promoting awareness and accountability across Indonesia." width="300" height="200">
+			<p>Our platform allows citizens to report corruption anonymously
+                while promoting awareness and accountability across Indonesia.</p>
+            <a href="report.html" class="btn">Submit a Report</a>
+        </section>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2>Anonymous &amp; Secure</h2>
+                <p>All reports are submitted anonymously. Your identity is never stored or shared.</p>
+            </div>
+            <div class="card">
+                <h2>Track Cases</h2>
+                <p>View reported cases and follow the progress of ongoing investigations.</p>
+            </div>
+            <div class="card">
+                <h2>Stay Informed</h2>
+                <p>Access awareness resources and the latest corruption statistics in Indonesia.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Corruption Watch Indonesia. All rights reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button class="btn" style="width:100%">Login</button>
+            <p class="modal-footer">Don't have an account? <a href="#">Register</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
